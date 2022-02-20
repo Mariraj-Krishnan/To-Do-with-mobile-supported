@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="storageHandler.js" defer></script>
+    <script src="userInteraction.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <input type="text" placeholder="Add a do..." />
+        <button type="submit" class="material-icons">add</button>
+      </form>
+      <div class="to-do do-container">
+        <h2>To-do</h2>
+        <template class="do-template">
+          <p class="to-do do">
+            <span></span>
+            <span class="more one material-icons">more_vert</span>
+          </p></template
+        >
+      </div>
+      <div class="completed do-container">
+        <h2>Completed</h2>
+        <template class="completed-template">
+          <p class="completed-do do">
+            <span></span>
+            <span class="more two material-icons">more_vert</span>
+          </p>
+        </template>
+      </div>
+    </div>
+    <div class="options one">
+      <p><span class="material-icons edit">edit_note</span>Edit</p>
+      <p><span class="material-icons completed">done</span>Completed</p>
+      <p><span class="material-icons delete">delete_outline</span>Delete</p>
+    </div>
+    <div class="options two">
+      <p><span class="material-icons incomplete">arrow_back</span>Incomplete</p>
+      <p><span class="material-icons delete">delete_outline</span>Delete</p>
+    </div>
+    <div class="rotate">
+      <h2>Rotate your screen to get full view</h2>
+      <div class="material-icons">screen_rotation</div>
+      <button onclick="document.querySelector('.rotate').style.display='none'">
+        OK
+      </button>
+    </div>
+  </body>
+</html>
