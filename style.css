@@ -159,7 +159,7 @@ h2 {
   color: var(--red);
   background-color: var(--red-secondary);
 }
-.options:last-of-type p:first-child span {
+.options.two p:first-child span {
   color: var(--orange) !important;
   background-color: var(--orange-secondary) !important;
 }
